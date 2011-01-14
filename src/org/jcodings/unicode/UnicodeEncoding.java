@@ -141,7 +141,7 @@ public abstract class UnicodeEncoding extends MultiByteEncoding {
             int from = UnicodeCaseFolds.CaseUnfold_11_From[i];
             int[]to = null;
             if (noUnicodeToAscii && isAscii(from)) {
-                toAscii[0] = asciiToLower(from);
+                toAscii[0] = asciiToUpper(from);
                 to = toAscii;
             } else {
                 to = UnicodeCaseFolds.CaseUnfold_11_To[i];
@@ -179,7 +179,7 @@ public abstract class UnicodeEncoding extends MultiByteEncoding {
                 int from = UnicodeCaseFolds.CaseUnfold_11_Locale_From[i];
                 int[]to = null;
                 if (noUnicodeToAscii && isAscii(from)) {
-                    toAscii[0] = asciiToLower(from);
+                    toAscii[0] = asciiToUpper(from);
                     to = toAscii;
                 } else {
                     to = UnicodeCaseFolds.CaseUnfold_11_Locale_To[i];

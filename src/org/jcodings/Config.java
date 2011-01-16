@@ -37,7 +37,7 @@ public interface Config {
 
     final boolean USE_UNICODE_CASE_FOLD_TURKISH_AZERI = false;
     final boolean USE_UNICODE_ALL_LINE_TERMINATORS = false;
-    final boolean USE_CRNL_AS_LINE_TERMINATOR = false;
+    final boolean USE_CRNL_AS_LINE_TERMINATOR = true;
 
     final boolean USE_UNICODE_PROPERTIES = true;
 }
